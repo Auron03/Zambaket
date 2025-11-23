@@ -1,0 +1,29 @@
+.header {
+    border: solid whitesmoke 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+}
+
+.logo{
+    font-size: 24px;
+    color: rgba(1, 31, 198, 0.493);
+    font-weight: bold;   
+}
+
+.nav-bar a{
+    background-color: white;
+    height: 60px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: rgba(1, 31, 198, 0.493);
+   
+}
+
+#imazhi {
+   height: 500px;
+   width: 100%;
+
+}
