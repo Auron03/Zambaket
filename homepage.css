@@ -1,29 +1,46 @@
 .header {
     border: solid whitesmoke 2px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 80px;
+    height: 80px;
+    background-image: url("Img14.png");
+    background-position: center;
 }
 
 .logo{
     font-size: 24px;
-    color: rgba(1, 31, 198, 0.493);
-    font-weight: bold;   
+    color: rgb(255, 255, 255);
+    font-weight: bold;  
+    position: absolute;
+    left: 40px; 
+    padding: 15px 15px;
 }
 
-.nav-bar a{
-    background-color: white;
-    height: 60px;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    color: rgba(1, 31, 198, 0.493);
-   
+.nav-bar {
+    display: flex;
+    gap: 30px;
 }
+.nav-bar a{
+    height: 60px;
+    font-size: 26px;
+    padding-top: 45px;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 #imazhi {
    height: 500px;
-   width: 100%;
-
+   width: 50%;
+   gap: 0;
+  
+}
+#imazhi2 {
+   height: 500px;
+   width: 50%;
+   gap: 0;
+  
 }
