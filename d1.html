@@ -43,7 +43,6 @@
     }
 </script>
 
-<<<<<<< HEAD
 
     <button onclick ="ciftTek()">Kliko per te futur Numer </button>
     <script>
@@ -63,7 +62,6 @@
 
 
 
-=======
 <button onclick="input1()">Bashkimi i fjaleve</button>
 <script>
     function input1(){
@@ -80,6 +78,21 @@
         alert(fjala1+" "+fjala2)
     }
 </script>
->>>>>>> 6ba3c5c36d5f43e025582759d532a28b7859dd78
+
+    <button onclick="perseritFjalen()">Perseritni Fjalen</button>
+    <script>
+        function perseritFjalen(){
+            let fjalaPare;
+            while(fjalaPare==""||fjalaPare==null){
+            fjalaPare=prompt("Sheno fjalen e pare")
+        }
+
+        let fjalaDyte;
+        while(fjalaDyte==""||fjalaDyte==null){
+            fjalaDyte=prompt("Sheno fjalen e dyte")
+        }
+        alert("Fjala e perseritur eshte : "+fjalaPare+fjalaDyte)
+        }
+    </script>
 </body>
 </html>
