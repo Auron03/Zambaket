@@ -42,5 +42,25 @@
         alert("Shuma e ketyre numrave eshte: "+shuma);
     }
 </script>
+
+
+    <button onclick ="ciftTek()">Kliko per te futur Numer </button>
+    <script>
+    function ciftTek (){
+        let numri;
+        while (numri == " " || numri == null){
+            let numri = prompt ("Sheno numrin");
+            if (numri % 2 == 0){
+                alert(numri+" Numer cift");
+            }
+            else if (numri%2 != 0){
+                alert(numri+" Numer tek");
+            }
+        }
+    }
+</script>
+
+
+
 </body>
 </html>
