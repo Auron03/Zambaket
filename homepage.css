@@ -54,7 +54,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
-  background: black;
+  background: rgb(3, 135, 73);
   color: white;
   font-weight: bold;
   cursor: pointer;
