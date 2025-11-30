@@ -26,6 +26,7 @@
     height: 25px;
 }
 
+
 #lastname {
     margin-bottom: 7px;
     width: 300px;
@@ -81,6 +82,24 @@
     border-radius: 5%;
     background-color:  rgba(0, 78, 0, 0.528);
     color: white;
+    text-decoration: none;
+}
+
+#link2 {
+    color: white;
+     text-decoration: none;
+}
+#link2:visited {
+    color: white;
+    text-decoration: none;
+}
+#link2:hover {
+    color: white;
+     text-decoration: none;
+}
+#link2:active {
+    color: white;
+     text-decoration: none;
 }
 
 .kycu {
