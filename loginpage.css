@@ -1,0 +1,109 @@
+.img1 {
+   background-image: url('Img11.png');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100vh;      
+   display: flex;         
+   justify-content: center;  
+   align-items: center;      
+}
+
+.register {
+    background-color: #fff;
+    border: 5px solid rgba(0, 78, 0, 0.528) ;
+    border-radius: 2px;
+    padding: 20px 40px;
+    text-align: center;
+    height: 600px;
+    width: 400px;
+}
+
+#firstname {
+    margin-bottom: 7px;
+    width: 300px;
+    height: 25px;
+}
+
+
+#lastname {
+    margin-bottom: 7px;
+    width: 300px;
+    height: 25px;
+}
+
+#email {
+    margin-bottom: 7px;
+    width: 300px;
+    height: 25px;
+}
+
+#password {
+    margin-bottom: 7px;
+    width: 300px;
+    height: 25px;
+}
+#re-password {
+    margin-bottom: 7px;
+    width: 300px;
+    height: 25px;
+}
+
+.FM{
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
+#phone {
+    margin-bottom: 7px;
+    width: 300px;
+    height: 25px;
+}
+
+#country {
+    margin-bottom: 7px;
+    width: 150px;
+    height: 25px;
+}
+
+#term1 {
+    font-size: 30px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+#submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5%;
+    background-color:  rgba(0, 78, 0, 0.528);
+    color: white;
+    text-decoration: none;
+}
+
+#link2 {
+    color: white;
+     text-decoration: none;
+}
+#link2:visited {
+    color: white;
+    text-decoration: none;
+}
+#link2:hover {
+    color: white;
+     text-decoration: none;
+}
+#link2:active {
+    color: white;
+     text-decoration: none;
+}
+
+.kycu {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
