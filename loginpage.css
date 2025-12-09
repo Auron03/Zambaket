@@ -1,5 +1,6 @@
 .img1 {
    background-image: url('Img11.png');
+   /* background-color: #1E1E1E; */
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -11,7 +12,9 @@
 }
 
 .register {
-    background-color: #fff;
+    /* background-color: #191616; */
+    background-image: url('Img13.png');
+    opacity: 1
     border: 5px solid rgba(0, 78, 0, 0.528) ;
     border-radius: 2px;
     padding: 20px 40px;
@@ -53,6 +56,7 @@
 .FM{
     margin-bottom: -5px;
     margin-top: -5px;
+    color: whitesmoke;
 }
 
 #phone {
@@ -75,12 +79,13 @@
 
 
 #submit {
+    z-index:-1;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 250px;
     height: 35px;
     border-radius: 5%;
-    background-color:  rgba(0, 78, 0, 0.528);
+    background-color:  #746BC4;
     color: white;
     text-decoration: none;
 }
