@@ -1,100 +1,151 @@
 .header {
-    border: solid whitesmoke 2px;
+    background: linear-gradient(to bottom, #3b374a 0%, #3b374a 50%, white 100%);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
-    /* background-image: url("Img14.png"); */
+    height: 120px;
+    padding: 0 40px;
     background-position: center;
+    border-bottom: 2px solid whitesmoke;
 }
 
-.logo{
+.logo {
+    display: flex;             
+    align-items: center;       
+    gap: 10px;                 
     font-size: 24px;
-    color: black;
-    font-weight: bold;  
-    position: absolute;
-    left: 40px; 
-    padding: 15px 15px;
+    font-weight: bold;
+    color: #f0e6ff;
 }
+
 
 .nav-bar {
+    justify-content: center;
     display: flex;
     gap: 30px;
+    flex: 1;
 }
-.nav-bar a{
-    height: 60px;
-    font-size: 26px;
-    padding-top: 45px;
-    padding-bottom: 5px;
-    color: rgb(0, 0, 0);
+
+.nav-bar a {
+    font-size: 22px;
+    color: #D8C7FF;
     text-decoration: none;
     font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .nav-bar a:hover {
-  text-decoration: underline;
+    transform: translateY(-2px);
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: #f0e6ff;
 }
 
-.bg{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100%;
-  background-image: url('Img10.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero {
+    position: relative;
+    height: 100vh;
 }
 
-.text {
-  font-size: 25px;
-  font-weight: bold;
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Img10.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
+
+
 #rezervo {
-  position: relative;
-  
-  top:-43px;
-  left: 1812px;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  /* background: rgb(221, 221, 223);  */
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
+    position: absolute;
+    top: 35px;      
+    right: 20px;    
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #746BC4, #8E7EE2);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-  padding: 25px;
+#rezervo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+#link {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #rezervo {
+        font-size: 16px;
+        padding: 10px 20px;
+        top: 10px;
+        right: 10px;
+    }
 }
 
 
+
+/* .text {
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+} */
 
 .footer {
-  background: #3b374a;
-  color: #f8f6f6;
-  padding: 40px 0;
+    background: #3b374a;
+    color: white;
+    padding: 40px 0;
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 40px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.footer h3 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.footer ul {
-  list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .footer a {
-  color: #ccc;
-  text-decoration: none;
+    color: #ccc;
+    text-decoration: none;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+    }
+
+    .hero {
+        height: 180px;
+    }
+
+    #rezervo {
+        padding: 14px 22px;
+        font-size: 18px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }

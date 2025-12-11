@@ -3,72 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginForm</title>
+    <title>Register</title>
     <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
 
-  <script>
-  setTimeout(function() {
+<script>
+setTimeout(() => {
     alert("Ju duhet të Regjistroheni/Kyceni në llogarinë tuaj per të rezervuar");
-  }, 800);
+}, 800);
 </script>
 
+<div class="img1">
+    <div class="register">
+        <form>
+            <img src="logo.png" alt="User Icon" height="150px"><br>
 
-   <div class="img1">
-  <div class="register">
-    <form>
-      <img src="logo.png" alt="User Icon" height="80px">
-      <br>
+            <input type="text" id="firstname" placeholder="First Name"><br>
+            <input type="text" id="lastname" placeholder="Last Name"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <input type="password" id="re-password" placeholder="Re-type Password"><br>
 
-      <label for="firstname"></label><br>
-      <input type="text" id="firstname" placeholder="First Name"><br>
+            <div class="FM">
+                <input type="radio" name="gender" value="M" id="male"> <label for="male">Mashkull</label>
+                <input type="radio" name="gender" value="F" id="female"> <label for="female">Femër</label>
+            </div>
 
-      <label for="lastname"></label><br>
-      <input type="text" id="lastname" placeholder="Last Name"><br>
+            <input type="text" id="phone" placeholder="Phone number"><br>
 
-      <label for="email"></label><br>
-      <input type="email" id="email" placeholder="Email"><br>
+            <select id="country">
+                <option value="Kosove">Kosove</option>
+                <option value="Shqiperi">Shqipëri</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Spain">Spain</option>
+            </select><br>
 
-      <label for="password"></label><br>
-      <input type="password" id="password" placeholder="Password"><br>
+            <input type="checkbox" id="term1">
+            <label for="term1" class="checkbox-label">Pranoj kushtet e përdorimit</label><br>
 
-      <label for="re-password"></label><br>
-      <input type="password" id="re-password" placeholder="Re-type Password"><br>
+            <button id="submit"><a href="reservationPage.html" id="link2">Regjistrohu</a></button>
 
-      <label></label><br>
-      <div class="FM">
-      <input type="radio" name="gender" value="M" id="male">
-      <label for="male">Mashkull</label>
-      <input type="radio" name="gender" value="F" id="female">
-      <label for="female">Femër</label><br> </div>
-
-      <label for="phone"></label><br>
-      <input type="text" id="phone" placeholder="Phone number"><br>
-
-      <label for="country"></label><br>
-      <select name="country" id="country">
-        <option value="Kosove">Kosove</option>
-        <option value="Shqiperi">Shqipëri</option>
-        <option value="Montenegro">Montenegro</option>
-        <option value="Spain">Spain</option>
-      </select><br>
-
-      
-      <input type="checkbox" id="term1">
-      <label for="term1">Pranoj kushtet e përdorimit</label><br>
-      
-
-      <div>
-      <button id="submit"><a href="reservationPage.html" id="link2">Regjistrohu</a></button>
-        </div>
-
-      <div class="kycu">
-        <a href="loginpage1.html">Keni llogari? Kycuni</a>
-          </div>
-    </form>
-  </div>
+            <div class="kycu">
+                <a href="loginpage1.html">Keni llogari? Kycuni</a>
+            </div>
+        </form>
+    </div>
 </div>
-    
+
 </body>
 </html>
