@@ -11,7 +11,7 @@
 }
 
 .register {
-    background-image: url('Img13.png');
+    background-image: url('login_bg.png');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -19,7 +19,7 @@
     padding: 20px 40px;
     text-align: center;
     width: 400px;
-    min-height: 650px;
+    min-height: 450px;
 }
 
 .FM {
@@ -33,7 +33,7 @@
 }
 
 .FM label {
-    color: rgb(221, 173, 129);
+    color: white;
     font-weight: 750;
 }
 
