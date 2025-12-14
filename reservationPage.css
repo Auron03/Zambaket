@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(to bottom, #3b374a 0%, #3b374a 50%, white 100%);
+    background: linear-gradient(to bottom, #1d3428 0%,#1d3428 50%, white 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,15 +16,17 @@
     font-size: 24px;
     font-weight: bold;
     color: #f0e6ff;
+    cursor: pointer;
+    box-shadow: none;
 }
 
 
 .nav-bar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     gap: 30px;
     flex: 1;
-    
+    margin-right: 180px;
 }
 
 .nav-bar a {

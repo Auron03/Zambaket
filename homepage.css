@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(to bottom, #3b374a 0%, #3b374a 50%, white 100%);
+    background: linear-gradient(to bottom, #1d3428 0%,#1d3428 50%, white 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,15 +16,16 @@
     font-size: 24px;
     font-weight: bold;
     color: #f0e6ff;
+    cursor: pointer;
+    box-shadow: none;
 }
 
-
 .nav-bar {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     gap: 30px;
     flex: 1;
-    
+    margin-right: 180px;
 }
 
 .nav-bar a {
@@ -59,7 +60,7 @@
 }
 
 
-#rezervo {
+.rezervo {
     position: absolute;
     top: 35px;      
     right: 20px;    
@@ -72,9 +73,10 @@
     color: white;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    margin-right: 30px;
 }
 
-#rezervo:hover {
+.rezervo:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
@@ -85,7 +87,7 @@
 }
 
 @media (max-width: 600px) {
-    #rezervo {
+    .rezervo {
         font-size: 16px;
         padding: 10px 20px;
         top: 10px;
@@ -102,7 +104,7 @@
 } */
 
 .footer {
-    background: #3b374a;
+    background: #1d3428;
     color: white;
     padding: 40px 0;
 }
@@ -140,7 +142,7 @@
         height: 180px;
     }
 
-    #rezervo {
+    .rezervo {
         padding: 14px 22px;
         font-size: 18px;
     }
