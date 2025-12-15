@@ -8,49 +8,64 @@
 </head>
 <body>
 
-<script>
-setTimeout(() => {
-    alert("Ju duhet të Regjistroheni/Kyceni në llogarinë tuaj per të rezervuar");
-}, 800);
-</script>
-
 <div class="img1">
     <div class="register">
-        <form>
+        <form id="registerForm">
             <img src="logo.png" alt="Logo" height="200px"><br>
 
             <input type="text" id="firstname" placeholder="Username"><br>
-            <!-- <input type="text" id="lastname" placeholder="Last Name"><br> -->
             <input type="email" id="email" placeholder="Email"><br>
             <input type="password" id="password" placeholder="Password"><br>
             <input type="password" id="re-password" placeholder="Re-type Password"><br>
+            <input type="text" id="phone" placeholder="Phone number"><br><br>
 
-            <!-- <div class="FM">
-                <input type="radio" name="gender" value="M" id="male"> <label for="male">Mashkull</label>
-                <input type="radio" name="gender" value="F" id="female"> <label for="female">Femër</label>
-            </div> -->
- 
-            <input type="text" id="phone" placeholder="Phone number"><br>
-
-            <!-- <select id="country">
-                <option value="Kosove">Kosove</option>
-                <option value="Shqiperi">Shqipëri</option>
-                <option value="Montenegro">Montenegro</option>
-                <option value="Spain">Spain</option>
-            </select><br> -->
-
-            <!-- <input type="checkbox" id="term1">
-            <label for="term1" class="checkbox-label">Pranoj kushtet e përdorimit</label><br> -->
-
-            <br>
-            <button id="submit"><a href="reservationPage.html" id="link2">Regjistrohu</a></button>
+            <button id="submit" type="submit">Regjistrohu</button>
 
             <div class="kycu">
-                <a href="loginpage1.html">Keni llogari? Kycuni</a>
+                <a href="loginpage1.html">Keni llogari? Kyçuni</a>
             </div>
         </form>
     </div>
 </div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const username = document.getElementById("firstname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const rePassword = document.getElementById("re-password").value;
+    const phone = document.getElementById("phone").value.trim();
+
+    if (!username || !email || !password || !rePassword || !phone) {
+        alert("Ju lutem plotësoni të gjitha fushat!");
+        return;
+    }
+
+    if (password.length < 6) {
+        alert("Password duhet të ketë minimum 6 karaktere!");
+        return;
+    }
+
+    if (password !== rePassword) {
+        alert("Password nuk përputhen!");
+        return;
+    }
+
+    const user = {
+        username,
+        email,
+        password,
+        phone
+    };
+
+    localStorage.setItem("user", JSON.stringify(user));
+    alert("Regjistrimi u krye me sukses!");
+
+    window.location.href = "reservationPage.html";
+});
+</script>
 
 </body>
 </html>
