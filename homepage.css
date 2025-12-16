@@ -97,12 +97,6 @@
 
 
 
-/* .text {
-    padding: 30px;
-    font-size: 22px;
-    font-weight: bold;
-} */
-
 .footer {
     background: #1d3428;
     color: white;
@@ -151,4 +145,130 @@
         flex-direction: column;
         text-align: center;
     }
+}
+
+.bgColor{
+    background-color: #1d3428;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.eat {
+    vertical-align: top;
+    width: 405px;
+    height: 400px;
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-weight: arial;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.ushqim{
+    width: 405px;
+    display: block;
+    object-position: cover;
+}
+.eatAbout{
+    width: 350px;
+    text-align: center;
+    padding-left: 30px;
+}
+.Button{
+    width: 250px;
+    height: 28px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-left: 30px;
+    background-color:rgb(253, 240, 4);
+    color: #black;
+    border: 2px #1d3428;
+    text-align: center;
+}
+
+.drink{
+    vertical-align: bottom;
+    width: 405px;
+    height: 500px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-weight: arial;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.pije{
+    width: 405px;
+    display: block;
+    object-position: cover;
+}
+
+.drinkAbout{
+    width: 350px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.parkuLodrav{
+    vertical-align: top;
+    width: 405px;
+    height: 440px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-weight: arial;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.park{
+    width: 405px;
+    display: block;
+    object-position: cover;
+}
+
+.parkAbout{
+    width: 350px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.lokacioni{
+    vertical-align: top;
+    width: 405px;
+    height: 500px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-weight: arial;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.lokac{
+    width: 405px;
+    display: block;
+    object-position: cover;
+}
+
+.lokacionAbout{
+    width: 350px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.hr{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
