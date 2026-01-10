@@ -147,128 +147,101 @@
     }
 }
 
-.bgColor{
-    background-color: #1d3428;
-    margin-top: 0;
-    margin-bottom: 0;
+
+
+.eat-image{
+  width: 100%;
 }
-.eat {
-    vertical-align: top;
-    width: 405px;
-    height: 400px;
-    display: inline-block;
-    border: 1px solid white;
+.eat-div{
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+.eat-paragraph{
     color: white;
-    font-weight: bold;
-    font-weight: arial;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-.ushqim{
-    width: 405px;
-    display: block;
-    object-position: cover;
-}
-.eatAbout{
-    width: 350px;
+    font-size: 20px;
     text-align: center;
-    padding-left: 30px;
 }
-.Button{
-    width: 250px;
-    height: 28px;
-    margin-left: 75px;
-    margin-right: 75px;
-    padding-left: 30px;
-    background-color: rgb(253, 240, 4);
-    color: #black;
-    border: 2px #1d3428;
-    text-align: center;
+.eat-grid{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.drink{
-    vertical-align: bottom;
-    width: 405px;
-    height: 500px;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 10px;
+
+.drink-image{
+  width: 100%;
+}
+.drink-div{
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+.drink-paragraph{
     color: white;
-    font-weight: bold;
-    font-weight: arial;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-.pije{
-    width: 405px;
-    display: block;
-    object-position: cover;
-}
-
-.drinkAbout{
-    width: 350px;
+    font-size: 20px;
     text-align: center;
-    padding-left: 30px;
+}
+.drink-grid{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.parkuLodrav{
-    vertical-align: top;
-    width: 405px;
-    height: 440px;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 10px;
+
+.playArea-image{
+  width: 100%;
+}
+.playArea-div{
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+.playArea-paragraph{
     color: white;
-    font-weight: bold;
-    font-weight: arial;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-.park{
-    width: 405px;
-    display: block;
-    object-position: cover;
-}
-
-.parkAbout{
-    width: 350px;
+    font-size: 20px;
     text-align: center;
-    padding-left: 30px;
+}
+.playArea-grid{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.lokacioni{
-    vertical-align: top;
-    width: 405px;
-    height: 500px;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 10px;
+
+.location-image{
+  width: 100%;
+}
+.location-div{
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+.location-paragraph{
     color: white;
-    font-weight: bold;
-    font-weight: arial;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-.lokac{
-    width: 405px;
-    display: block;
-    object-position: cover;
-}
-
-.lokacionAbout{
-    width: 350px;
+    font-size: 20px;
     text-align: center;
-    padding-left: 30px;
+}
+.location-grid{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.hr{
-    width: 90%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5%;
-    margin-right: 5%;
+
+.grid-container{
+  padding-left: 5px;
+  padding-right: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  background-color: #1d3428;
+}
+
+.button {
+  background-color: yellow;
+  border-radius: 15px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 30px;
 }
