@@ -5,48 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reservationPage.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-
-    <header class="header">
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo" height="120px">
-        <span>Restaurant</span>
+     <div class="header">
+      <div class="left-section">
+        <img src="images/logo.png" alt="Logo" height="150px" width="150px">
       </div>
-      <div class="nav-bar">
-        <a href="homepage.html">Home</a>
-        <a href="">Eat & Drink</a>
-        <a href="">Contact</a>
-        <a href="">About</a>
-        <img src="images/icon.png" id="icon" alt="pr">
+      <div class="middle-section">
+            <a href="">Home</a>
+            <a href="">Eat & Drink</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
       </div>
-    </header>
-
+      <div class="right-section">
+            <img src="images/icon.png" height="90px">
+      </div>
+      </div>
+    
     <div class="img">
       <div class="bg"></div>
 
     <div class="box">
-      <h1 id="h1"><strong>Mire se erdhet ne platformen per Reservime Online</strong></h1><br>
+      <div class="titulli">
+        <h1 id="h1"><strong>Mire se erdhet ne platformen per Reservime Online</strong></h1><br>
       <br> 
+      </div>
       <form action="">
-
-          <label for="name">
+          <div class="name-box">
+            <label for="name">
             <input type="name" id="name" placeholder="Emri">
           </label><br>
-
-          <label for="capacity">
+          </div>
+          <div class="capacity-box">
+            <label for="capacity">
             <input type="number" id="capacity" placeholder="Numri i personave ne tavoline">
-          </label><br>
-
-          <label for="date">
+            </label>
+          </div>
+          <div class="date-box">
+            <label for="date">
             <input type="date" id="date" placeholder="Data dhe koha e rezervimit">
-          </label><br>
-
-          <label for="text">
+            </label>
+          </div>
+          <div class="text-box">
+            <label for="text">
             <input type=" text" id="text" placeholder="Shenoni ndonje kerkese shtese">
-          </label> <br>
-
-          <button class="submit">Dergo</button>
+            </label> 
+          </div>
+          <div class="button-box">
+            <button class="submit">Dergo</button>
+          </div>
+          
         </form>
         </div>
       </div>

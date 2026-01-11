@@ -1,0 +1,25 @@
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #1d3428;
+    color: white;
+    align-items: center;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    padding: 8%;
+}
+.about{
+    text-align: center;
+}
+.rights{
+    text-align: center;
+}
+.links{
+    text-align: center;
+    text-decoration: none;
+    text-emphasis-color: white;
+    font-size: 25px;
+}
