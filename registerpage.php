@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once "includes/dbConn.php";
+    require_once "dbConn.php";
     $db = new dbConn();
     $conn = $db->connectDB();
 

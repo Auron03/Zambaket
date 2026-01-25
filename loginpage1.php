@@ -1,12 +1,14 @@
 <?php
     session_start();
-    require_once "includes/dbConn.php";
+    require_once "dbConn.php";
     $db = new dbConn();
     $conn = $db->connectDB();
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
-        $email = trim($_POST["email"]);
-        $password = $_POST["password"];
+   $email = '';
+   $password = '';
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $email = isset($_POST["email"]) ? strtolower(trim($_POST["email"])) : "";
+        $password = isset($_POST["password"]) ? $_POST["password"] : "";
 
         if(empty($email) || empty($password)){
             echo "Ju lutem plotesoni te gjitha fushat!";
@@ -16,23 +18,25 @@
             $stmt->execute([$email]);
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            if($user && password_verify($password, $user["password"])){
+          if ($user && isset($user["PASSWORD"])) {
+            if (password_verify($password, $user["PASSWORD"])) {
                 $_SESSION["user_id"] = $user["id"];
                 $_SESSION["username"] = $user["username"];
                 $_SESSION["role"] = $user["role"];
 
-                if ($user["role"] == "admin"){
-                    header("Location: adminDashboard.php"); //Duhet me kriju qit faqe se se kom
+                if ($user["role"] == "admin") {
+                    header("Location: adminDashboard.php");
                     exit();
-                }   
-                else {
+                } else {
                     header("Location: reservationPage.php");
                     exit();
                 }
-            }
-            else {
+            } else {
                 echo "Email ose Password i pasakt";
             }
+        } else {
+            echo "Email ose Password i pasakt";
+        }
         }
     }
 

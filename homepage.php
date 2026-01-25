@@ -22,7 +22,7 @@
       </div>
       <div class="right-section">
         <button class="rezervo">
-            <a href="loginpage.html" id="link">Reserve Now</a>
+            <a href="registerpage.php" id="link">Reserve Now</a>
         </button>
       </div>
       </div>
