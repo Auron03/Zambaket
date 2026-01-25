@@ -90,7 +90,6 @@
   grid-template-columns: 1fr;
 }
 
-
 .grid-container{
   padding-left: 5px;
   padding-right: 5px;
@@ -113,6 +112,40 @@
 }
 
 
+.ambient-image{
+  width: 100%;
+}
+.ambient-div{
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+.ambient-paragraph{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.ambient-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 
 
+.parking-image{
+  width: 100%;
+}
+.parking-div{
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+.parking-paragraph{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.parking-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}

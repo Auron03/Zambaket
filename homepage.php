@@ -98,15 +98,16 @@
   </div>
 
 
-  <div class="eat-div">
+  <div class="ambient-div">
     <div>
-      <img class="eat-image" src="images/food.jpg" alt="eat-image">
+      <img class="ambient-image" src="images/ambienti.png" alt="ambient-image">
     </div>
-    <div class="eat-grid">
-      <p class="eat-paragraph">
-        Në restorantin tonë, çdo pjatë është një udhëtim shijesh.
-        Përgatitur me përbërës të freskët dhe të zgjedhur me kujdes,
-        ushqimet tona kombinojnë traditën me kreativitetin modern.
+    <div class="ambient-grid">
+      <p class="ambient-paragraph">
+       Rreth restorantit shtrihet një mjedis i gjelbër dhe i qetë,
+       ku lumi me ujë të pastër rrjedh mes gurëve dekorativë dhe shatërvanëve të vegjël.
+       Tingulli i ujit bashkohet me gjelbërimin përreth, 
+       duke krijuar një atmosferë të relaksuar dhe të veçantë për çdo vizitor.
       </p>
       <button class="button">
         Shiko me shume
@@ -114,15 +115,17 @@
     </div>
   </div>
 
-  <div class="drink-div">
+  <div class="parking-div">
     <div>
-      <img class="drink-image" src="images/drinks.jpg" alt="drink-image">
+      <img class="parking-image" src="images/parking.png" alt="parking-image">
     </div>
-    <div class="drink-grid">
-      <p class="drink-paragraph">
-        Pijet tona janë menduar për të plotësuar çdo shije dhe për të sjellë freski në çdo moment.
-        Çdo gotë është një eksperiencë më vete nga freskia e frutave deri te eleganca e verës,
-        pijet tona janë krijuar për të kënaqur çdo klient.
+    <div class="parking-grid">
+      <p class="parking-paragraph">
+      Restoranti ynë ofron hapësirë të bollshme për parkim ,
+      ofron dy zona të përshtatshme për parkim:
+      një hapësirë të gjerë në fillim të hyrjes dhe një tjetër më afër ndërtesës, 
+      e menduar posaçërisht për personat që kanë vështirësi në ecje.
+      Kjo organizim siguron qasje të lehtë dhe komoditet për çdo vizitor.
       </p>
       <button class="button">
         Shiko me shume
