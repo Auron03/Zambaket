@@ -1,3 +1,17 @@
+<?php
+require_once "dbConn.php";
+$db = new dbConn();
+$conn = $db->connectDB();
+
+require_once "Product.php";
+$productObj = new Product($conn);
+$products = $productObj->getAll();
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +23,9 @@
     <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-
-    <div class="header">
+      
+   
+      <div class="header">
       <div class="left-section">
         <img src="images/logo.png" alt="Logo" height="150px" width="150px">
       </div>
@@ -30,7 +45,8 @@
     <div class="hero">
         <div class="bg"></div>
     </div>
-    
+
+    <!-- 
     <div class="grid-container">
       <div class="eat-div">
     <div>
@@ -132,7 +148,36 @@
       </button>
     </div>
   </div>
-  </div>
+  </div>  -->
+
+
+
+  <div class="grid-container">
+  <?php foreach ($products as $p): ?>
+    <?php
+      $class = "";
+      if ($p['title'] === "Ushqimet tona") $class = "eat-div";
+      elseif ($p['title'] === "Pijet tona") $class = "drink-div";
+      elseif ($p['title'] === "Këndi i lojërave") $class = "playArea-div";
+      elseif ($p['title'] === "Lokacioni") $class = "location-div";
+      elseif ($p['title'] === "Ambienti") $class = "ambient-div";
+      elseif ($p['title'] === "Parkingu") $class = "parking-div";
+    ?>
+    <div class="<?= $class ?>">
+      <?php if ($p['image']): ?>
+        <img src="<?= htmlspecialchars($p['image']) ?>" alt="product-image" class="<?= str_replace('-div','-image',$class) ?>">
+      <?php endif; ?>
+      <div class="<?= str_replace('-div','-grid',$class) ?>">
+        <p class="<?= str_replace('-div','-paragraph',$class) ?>">
+          <?= htmlspecialchars($p['description']) ?>
+        </p>
+        <button class="button">Shiko me shume</button>
+      </div>
+    </div>
+  <?php endforeach; ?>
+</div>
+
+
 
   <div class="footer-container">
     <div class="footer-grid">
@@ -151,5 +196,9 @@
   </div>
     
 
+
 </body>
 </html>
+
+
+
