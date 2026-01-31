@@ -1,25 +1,29 @@
-.footer-container{
+.footer-container {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #1d3428;
     color: white;
     align-items: center;
 }
-.footer-grid{
+
+.footer-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
     padding: 8%;
 }
-.about{
+
+.about {
     text-align: center;
 }
-.rights{
+
+.rights {
     text-align: center;
 }
-.links{
+
+.links {
     text-align: center;
     text-decoration: none;
-    text-emphasis-color: white;
+    color: white;
     font-size: 25px;
 }

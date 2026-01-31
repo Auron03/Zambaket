@@ -6,9 +6,7 @@ $conn = $db->connectDB();
 require_once "Product.php";
 $productObj = new Product($conn);
 $products = $productObj->getAll();
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,16 +14,16 @@ $products = $productObj->getAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
       
-   
-      <div class="header">
+    <div class="header">
       <div class="left-section">
-        <img src="images/logo.png" alt="Logo" height="150px" width="150px">
+        <a href="homepage.php"><img src="../images/logo.png" alt="Logo" height="150px" width="150px"></a>
       </div>
       <div class="middle-section">
             <a href="homepage.php">Home</a>
@@ -38,71 +36,65 @@ $products = $productObj->getAll();
             <a href="registerpage.php" id="link">Reserve Now</a>
         </button>
       </div>
-      </div>
+    </div>
 
     <div class="hero">
         <div class="bg"></div>
     </div>
 
- 
-<div class="slider-section">
-  <div class="slider">
-    <?php foreach ($products as $p): ?>
-      <div class="slide">
-        <?php if ($p['image']): ?>
-          <img src="<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['title']) ?>">
-        <?php endif; ?>
-        <h3 class="slide-title"><?= htmlspecialchars($p['title']) ?></h3>
-      </div>
-    <?php endforeach; ?>
-  </div>
-</div>
-
-
-
-
-  <div class="grid-container" id="eat&drink">
-  <?php foreach ($products as $p): ?>
-    <?php
-      $class = "";
-      if ($p['title'] === "Ushqimet tona") $class = "eat-div";
-      else if ($p['title'] === "Pijet tona") $class = "drink-div";
-      else if ($p['title'] === "Këndi i lojërave") $class = "playArea-div";
-      else if ($p['title'] === "Lokacioni") $class = "location-div";
-      else if ($p['title'] === "Ambienti") $class = "ambient-div";
-      else if ($p['title'] === "Parkingu") $class = "parking-div";
-    ?>
-    <div class="<?= $class ?>">
-      <?php if ($p['image']): ?>
-        <img src="<?= htmlspecialchars($p['image']) ?>" alt="product-image" class="<?= str_replace('-div','-image',$class) ?>">
-      <?php endif; ?>
-      <div class="<?= str_replace('-div','-grid',$class) ?>">
-        <p class="<?= str_replace('-div','-paragraph',$class) ?>">
-          <?= htmlspecialchars($p['description']) ?>
-        </p>
-        <button class="button">Shiko me shume</button>
+    <div class="slider-section">
+      <div class="slider">
+        <?php foreach ($products as $p): ?>
+          <div class="slide">
+            <?php if ($p['image']): ?>
+              <img src="../<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['title']) ?>">
+            <?php endif; ?>
+            <h3 class="slide-title"><?= htmlspecialchars($p['title']) ?></h3>
+          </div>
+        <?php endforeach; ?>
       </div>
     </div>
-  <?php endforeach; ?>
-</div>
 
-
-
-  <div class="footer-container" id="about">
-    <div class="footer-grid">
-         <p class="about">
-           Në Restorantin Holiday, çdo vizitë është një përvojë e plotë që bashkon shijen, natyrën dhe mikpritjen.<br>
-           Pjatat tona pasqyrojnë traditën e Podgurit, të përgatitura me përbërës të freskët dhe të prezantuara me kujdes modern.
-          </p>
-          <p class="rights">Copyright © 2025 Zambaket. All rights reserved.</p>
-          <div class="links">
-          <a href="#">Advertise</a>
-          <a href="#">Support</a>
-          <a href="#">Our Company</a>
-          <a href="#">Contact</a>
-          </div> 
+    <div class="grid-container" id="eat&drink">
+      <?php foreach ($products as $p): ?>
+        <?php
+          $class = "";
+          if ($p['title'] === "Ushqimet tona") $class = "eat-div";
+          else if ($p['title'] === "Pijet tona") $class = "drink-div";
+          else if ($p['title'] === "Këndi i lojërave") $class = "playArea-div";
+          else if ($p['title'] === "Lokacioni") $class = "location-div";
+          else if ($p['title'] === "Ambienti") $class = "ambient-div";
+          else if ($p['title'] === "Parkingu") $class = "parking-div";
+        ?>
+        <div class="<?= $class ?>">
+          <?php if ($p['image']): ?>
+            <img src="../<?= htmlspecialchars($p['image']) ?>" alt="product-image" class="<?= str_replace('-div','-image',$class) ?>">
+          <?php endif; ?>
+          <div class="<?= str_replace('-div','-grid',$class) ?>">
+            <p class="<?= str_replace('-div','-paragraph',$class) ?>">
+              <?= htmlspecialchars($p['description']) ?>
+            </p>
+            <button class="button">Shiko me shume</button>
+          </div>
+        </div>
+      <?php endforeach; ?>
     </div>
-  </div>
+
+    <div class="footer-container" id="about">
+      <div class="footer-grid">
+           <p class="about">
+             Në Restorantin Holiday, çdo vizitë është një përvojë e plotë që bashkon shijen, natyrën dhe mikpritjen.<br>
+             Pjatat tona pasqyrojnë traditën e Podgurit, të përgatitura me përbërës të freskët dhe të prezantuara me kujdes modern.
+            </p>
+            <p class="rights">Copyright © 2025 Zambaket. All rights reserved.</p>
+            <div class="links">
+              <a href="#">Advertise</a>
+              <a href="#">Support</a>
+              <a href="#">Our Company</a>
+              <a href="contact.php">Contact</a>
+            </div> 
+      </div>
+    </div>
     
 <script>
   let slider = document.querySelector('.slider');
@@ -117,8 +109,6 @@ $products = $productObj->getAll();
     }
   }, interval);
 </script>
-
-
 
 </body>
 </html>

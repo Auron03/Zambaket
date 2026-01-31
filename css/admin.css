@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    background-color: #1d3428;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+nav {
+    background-color: #2a4a36;
+    text-align: center;
+    padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #1d3428;
+}
+
+form {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 95%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #1d3428;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2a4a36;
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+.product-box {
+    flex: 0 0 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.message-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.message-box {
+    flex: 0 0 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+}

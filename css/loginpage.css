@@ -1,5 +1,5 @@
 .img1 {
-    background-image: url('images/Img11.png');
+    background-image: url('../images/Img11.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 }
 
 .register {
-    background-image: url('images/login_bg.png');
+    background-image: url('../images/login_bg.png');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -21,7 +21,7 @@
     width: 400px;
     min-height: 450px;
 }
- 
+
 .FM {
     margin: 10px 0;
     color: white;
@@ -74,11 +74,10 @@
 }
 
 @media (max-width: 450px) {
-
     .register {
         width: 90%;
         padding: 20px;
-        background-image: url('images/Img13.png'); 
+        background-image: url('../images/Img13.png');
     }
 
     .register input,

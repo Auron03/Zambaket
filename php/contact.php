@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "dbConn.php";
 $db = new dbConn();
 $conn = $db->connectDB();
@@ -25,16 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
   <meta charset="UTF-8">
   <title>Contact Us</title>
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="contact.css">
-
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
 
-
   <div class="header">
     <div class="left-section">
-      <img src="images/logo.png" alt="Logo" height="150px" width="150px">
+      <a href="homepage.php"><img src="../images/logo.png" alt="Logo" height="150px" width="150px"></a>
     </div>
     <div class="middle-section">
       <a href="homepage.php">Home</a>
@@ -44,23 +43,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="right-section">
       <button class="rezervo">
-        <a href="register.php" id="link">Reserve Now</a>
+        <a href="registerpage.php" id="link">Reserve Now</a>
       </button>
     </div>
   </div>
 
-
   <div class="img">
     <div class="bg"></div>
-
-
     <div class="box">
       <div class="titulli">
         <h1 id="h1"><strong>Na kontaktoni</strong></h1>
-        <?php if (!empty($feedback)) echo "<p style='color:white;'>$feedback</p>"; ?>
+        <?php if (!empty($feedback)) echo "<p class='feedback'>$feedback</p>"; ?>
       </div>
 
-           <form method="POST" action="">
+      <form method="POST" action="">
         <div class="form-group">
           <input type="text" name="name" placeholder="Emri" required>
         </div>
@@ -77,8 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <button type="submit" class="submit">Dërgo</button>
         </div>
       </form>
-
-
     </div>
   </div>
 

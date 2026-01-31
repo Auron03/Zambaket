@@ -5,92 +5,86 @@
     flex: 1;
 }
 .bg {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/Img10.png');
+    background-image: url('../images/Img10.png');
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
 
-.eat-image{
+.eat-image {
   width: 100%;
 }
-.eat-div{
-  border: solid;
+.eat-div {
+  border: 1px solid white;
   border-radius: 5px;
-  border-color: white;
 }
-.eat-paragraph{
+.eat-paragraph {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.eat-grid{
+.eat-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-
-.drink-image{
+.drink-image {
   width: 100%;
 }
-.drink-div{
-  border: solid;
+.drink-div {
+  border: 1px solid white;
   border-radius: 5px;
-  border-color: white;
 }
-.drink-paragraph{
+.drink-paragraph {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.drink-grid{
+.drink-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-
-.playArea-image{
+.playArea-image {
   width: 100%;
 }
-.playArea-div{
-  border: solid;
+.playArea-div {
+  border: 1px solid white;
   border-radius: 5px;
-  border-color: white;
 }
-.playArea-paragraph{
+.playArea-paragraph {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.playArea-grid{
+.playArea-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-
-.location-image{
+.location-image {
   width: 100%;
 }
-.location-div{
-  border: solid;
+.location-div {
+  border: 1px solid white;
   border-radius: 5px;
-  border-color: white;
 }
-.location-paragraph{
+.location-paragraph {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.location-grid{
+.location-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.grid-container{
+.grid-container {
   padding-left: 5px;
   padding-right: 5px;
   display: grid;
@@ -104,48 +98,40 @@
   background-color: yellow;
   border-radius: 15px;
   width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% auto;
   height: 30px;
 }
 
-
-.ambient-image{
+.ambient-image {
   width: 100%;
 }
-.ambient-div{
-  border: solid;
+.ambient-div {
+  border: 1px solid white;
   border-radius: 5px;
-  border-color: white;
 }
-.ambient-paragraph{
+.ambient-paragraph {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.ambient-grid{
+.ambient-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-
-
-.parking-image{
+.parking-image {
   width: 100%;
 }
-.parking-div{
-  border: solid;
+.parking-div {
+  border: 1px solid white;
   border-radius: 5px;
-  border-color: white;
 }
-.parking-paragraph{
+.parking-paragraph {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.parking-grid{
+.parking-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -196,4 +182,3 @@
 html {
   scroll-behavior: smooth;
 }
-
