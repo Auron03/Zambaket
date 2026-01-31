@@ -64,7 +64,7 @@
             <input type="email" id="email" name="email" placeholder="Email"><br><br>
             <input type="password" id="password" name="password" placeholder="Password"><br><br>
 
-            <button id="submit" type="submit"><a href="reservationPage.php">Log in</a></button>
+            <button id="submit" type="submit">Log in</button>
         </form>
     </div>
 </div>

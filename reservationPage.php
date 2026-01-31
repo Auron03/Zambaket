@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "user") {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,13 +69,7 @@
         </div>
       </div>
 
-      <script>
-      const user = localStorage.getItem("user");
-      if (!user) {
-      alert("Ju duhet të regjistroheni ose kyçeni për të rezervuar!");
-      window.location.href = "loginpage.html";
-      }
-      </script>
+   
 
     
 </body>
