@@ -12,7 +12,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
     exit();
 }
 
-
+// CREATE 
 if (isset($_POST["add"])) {
     $title = $_POST["title"];
     $description = $_POST["description"];
@@ -24,7 +24,7 @@ if (isset($_POST["add"])) {
     $productObj->add($title, $description, $fileName, $_SESSION["user_id"]);
 }
 
-
+// UPDATE 
 if (isset($_POST["update"])) {
     $id = $_POST["id"];
     $title = $_POST["title"];
@@ -32,7 +32,7 @@ if (isset($_POST["update"])) {
     $productObj->update($id, $title, $description);
 }
 
-
+// DELETE 
 if (isset($_POST["delete"])) {
     $id = $_POST["delete_id"];
     $productObj->delete($id);
@@ -55,6 +55,7 @@ $products = $productObj->getAll();
         <li><a href="manageUsers.php">Përdoruesit</a></li>
         <li><a href="manageReservations.php">Rezervimet</a></li>
         <li><a href="adminDashboard.php">Produktet</a></li>
+        <li><a href="manageStaff.php">Staff-i</a></li> 
         <li><a href="logout.php">Log out</a></li>
     </ul>
   </nav>

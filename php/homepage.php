@@ -74,7 +74,9 @@ $products = $productObj->getAll();
             <p class="<?= str_replace('-div','-paragraph',$class) ?>">
               <?= htmlspecialchars($p['description']) ?>
             </p>
-            <button class="button">Shiko me shume</button>
+             <a href="registerpage.php" class="button">Shiko me shume</a>
+
+
           </div>
         </div>
       <?php endforeach; ?>
@@ -128,7 +130,7 @@ $products = $productObj->getAll();
         ushqimet tona kombinojnë traditën me kreativitetin modern.
       </p>
       <button class="button">
-        Shiko me shume
+        <a href="registerpage.php">Shiko me shume</a>
       </button>
     </div>
   </div>
@@ -144,7 +146,7 @@ $products = $productObj->getAll();
         pijet tona janë krijuar për të kënaqur çdo klient.
       </p>
       <button class="button">
-        Shiko me shume
+        <a href="registerpage.php">Shiko me shume</a>
       </button>
     </div>
   </div>
@@ -160,7 +162,7 @@ $products = $productObj->getAll();
         Kjo hapësirë e veçantë është menduar për të sjellë buzëqeshje dhe energji pozitive për më të vegjlit.
       </p>
        <button class="button">
-        Shiko me shume
+        <a href="registerpage.php">Shiko me shume</a>
       </button>
     </div>
   </div>
@@ -177,7 +179,7 @@ $products = $productObj->getAll();
         natyrore, ideale për të shijuar ushqimin në harmoni me tingujt e natyrës.
       </p>
       <button class="button">
-        Shiko me shume
+        <a href="registerpage.php">Shiko me shume</a>
       </button>
     </div>
   </div>
@@ -195,7 +197,7 @@ $products = $productObj->getAll();
        duke krijuar një atmosferë të relaksuar dhe të veçantë për çdo vizitor.
       </p>
       <button class="button">
-        Shiko me shume
+        <a href="registerpage.php">Shiko me shume</a>
       </button>
     </div>
   </div>
@@ -213,7 +215,7 @@ $products = $productObj->getAll();
       Kjo organizim siguron qasje të lehtë dhe komoditet për çdo vizitor.
       </p>
       <button class="button">
-        Shiko me shume
+        <a href="registerpage.php">Shiko me shume</a>
       </button>
     </div>
   </div>

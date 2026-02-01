@@ -10,6 +10,26 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] !== "admin") {
 $db = new dbConn();
 $conn = $db->connectDB();
 
+// DELETE 
+if (isset($_POST["delete"])) {
+    $id = $_POST["delete_id"];
+    $stmt = $conn->prepare("DELETE FROM reservations WHERE id = ?");
+    $stmt->execute([$id]);
+}
+
+// UPDATE 
+if (isset($_POST["update"])) {
+    $id = $_POST["id"];
+    $name = $_POST["name"];
+    $capacity = $_POST["capacity"];
+    $date = $_POST["date"];
+    $request = $_POST["request"];
+
+    $stmt = $conn->prepare("UPDATE reservations SET name=?, capacity=?, date=?, request=? WHERE id=?");
+    $stmt->execute([$name, $capacity, $date, $request, $id]);
+}
+
+// READ 
 $stmt = $conn->query("
     SELECT id, name, capacity, date, request
     FROM reservations
@@ -35,14 +55,22 @@ $reservations = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <th>Kapaciteti</th>
             <th>Data</th>
             <th>Kërkesa</th>
+            <th>Veprime</th>
         </tr>
         <?php foreach ($reservations as $res): ?>
         <tr>
-            <td><?= htmlspecialchars($res["id"]) ?></td>
-            <td><?= htmlspecialchars($res["name"]) ?></td>
-            <td><?= htmlspecialchars($res["capacity"]) ?></td>
-            <td><?= htmlspecialchars($res["date"]) ?></td>
-            <td><?= nl2br(htmlspecialchars($res["request"])) ?></td>
+            <form method="POST">
+                <td><?= htmlspecialchars($res["id"]) ?></td>
+                <td><input type="text" name="name" value="<?= htmlspecialchars($res["name"]) ?>"></td>
+                <td><input type="number" name="capacity" value="<?= htmlspecialchars($res["capacity"]) ?>"></td>
+                <td><input type="date" name="date" value="<?= htmlspecialchars($res["date"]) ?>"></td>
+                <td><textarea name="request"><?= htmlspecialchars($res["request"]) ?></textarea></td>
+                <td>
+                    <input type="hidden" name="id" value="<?= $res["id"] ?>">
+                    <button type="submit" name="update">Edito</button>
+                    <button type="submit" name="delete" onclick="return confirm('A je i sigurt që do ta fshish këtë rezervim?')">Fshij</button>
+                </td>
+            </form>
         </tr>
         <?php endforeach; ?>
     </table>
